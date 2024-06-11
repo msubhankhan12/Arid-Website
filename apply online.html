@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="main.js"></script>
+    
+
+    <title>Arid Lahore-Apply Online</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img class="nav-logo1" width="90px" height="70px" src="aridlogo2.png" alt="Logo">
+          <img class="nav-logo2" width="200px" height="70px" src="sabaclogo1.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link nav-pages" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pages" href="admissions.html">Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pages" href="campus life.html">Campus Life</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active-link" href="apply online.html">Apply Online </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pages" href="about us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pages" href="contact us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-pages" href="aims login.html">AIMS Login</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+<!--RULES AND REGULATIONS-->
+<div class="container rules">
+  <h2 class="rules-text">RULES AND REGULATIONS</h2>
+  <br>
+  <ol class="rules-list">
+    <li class="rules-item">THE PARTICULARS GIVEN BELOW ARE CORRECT.</li>
+    <li class="rules-item">I AM APPLYING FOR ADMISSION WITH THE EXPRESS CONSENT OF MY PARENTS/GUARDIANS.</li>
+    <li class="rules-item">IF ADMITTED, I WILL OBSERVE THE RULES AND REGULATIONS OF THE COLLAGE AS WHOLE-TIME STUDENT. IN FORCE AT THE TIME OF JOINING AND WHICH MIGHT BE FRAMED SUBSEQUENTLY.</li>
+    <li class="rules-item">ALL FEE SHALL BE PAID ON OR BEFORE THE 10TH OF EVERY QUARTER RESPECTIVELY. LATE FEE AS RS.100/ DAY WILL BE CHARGE AFTER DUE DATE.</li>
+    <li class="rules-item">FEE ONCE PAID IS NOT REFUNDABLE (ADMISSION REGISTRATION/TUITION FEE) IN ANY CASE.</li>
+    <li class="rules-item">UNIVERSITY REGISTRATION ENROLLMENT AND EXAMINATION FEE SHALL BE PAID BY THE STUDENTS SEPARATELY.
+
+      </li>
+      <li class="rules-item">Minimum 50% marks in F.Sc. Pre-Engineering, Pre-Medical (with one deficiency Math subject), ICS, F.Sc. General Science with Mathematics, FA with Mathematics, or equivalent degrees from recognized institutions. The students awaiting result may also apply for admission on provisional basis.
+
+      </li>
+      <li class="rules-item">A person holding Intermediate Certificate, A-level or an equivalent certificate from any recognized Institute with at least second division or overall 50% marks, or any other marks specified shall be eligible to apply for admission.
+      </li>
+      <li class="rules-item">Admission will be on open merit basis.
+      </li>
+  </ol>
+</div>
+
+<br><br>
+
+<!--APPLICATION FORM-->
+
+<div class="container applicationForm">
+  
+<form action="form.php"   method="POST" target="_blank" enctype="multipart/form-data">
+  <input type="hidden" name="access_key" value="878090c6-6894-44e5-bb19-2dc8400d7c52
+  ">
+  <div class="PersonalDetails">PERSONAL DETAILS</div>
+  <br>
+  <div class="form-group row">
+    <label for="exampleFormControlFile1">Upload Profile Picture</label>
+    <input type="file"name="profilePic" accept="image/png,image/jpg,image/jpeg" class="form-control-file" id="profilePic" onchange="loadFile1(event)"  required >
+    <div id="profilePicError" class="error-message">Field is required</div>
+    <p><img width="100px" id="output1"/></p>
+  </div>
+  <div class="form-row row">
+    
+  
+
+    <div class="form-group col-md-6">
+      
+      <input name="firstName" id="firstName" type="text" class="form-control"  placeholder="First Name"  required>
+      <div id="firstNameError" class="error-message">Field is required</div>
+
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="lastName" id="lastName" type="text" class="form-control" placeholder="Last Name"  required>
+      <div id="lastNameError" class="error-message">Field is required</div>
+    </div>
+  
+    <div class="form-group col-md-6">
+     
+      <input name="email" type="email" class="form-control" id="email" placeholder="Email"  required>
+      <div id="emailError" class="error-message">Field is required</div>
+      <div id="emailError1" class="error-message">Please Enter a Valid Email Address.</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="mobile" type="tel" class="form-control" id="mobile" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Mobile No" pattern="[0-9]{11}" maxlength="11"  required>
+      <div id="mobileError" class="error-message">Field is required</div>
+      <div id="mobileError1" class="error-message">Please Enter Valid Mobile Number.</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="cnic" type="text" class="form-control" id="cnic" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" pattern="[0-9]{13}" maxlength="13" placeholder="CNIC/Form-B No Without Dashes" required >
+      <div id="cnicError" class="error-message">Field is required</div>
+      <div id="cnicError1" class="error-message">Please Enter Valid CNIC of 13 Digits Without Dashes.</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="domicile" type="text" class="form-control" id="domicile" placeholder="Domicile" required >
+      <div id="domicileError" class="error-message">Field is required</div>
+    </div>
+    <div class="form-group">
+    
+
+      <label  for="gender">Gender</label>
+      <br>
+    <div class="form-check form-check-inline" >
+      <input name="gender" class="form-check-input radio-btn" type="radio"  id="genderMale" value="male" required >Male
+    </div>
+    
+    <div class="form-check form-check-inline">
+      <input name="gender" class="form-check-input radio-btn" type="radio"  id="genderFemale "value="female" required>Female
+    </div>
+    <div id="genderFemaleError" class="error-message">Field is required</div>
+    
+  </div>
+</div>
+
+
+  <div class="form-group">
+    <input name="address_1" type="text" class="form-control" id="address" placeholder="Address"  required>
+    <div id="addressError" class="error-message">Field is required</div>
+  </div>
+  
+  <div class="form-row row">
+    <div class="form-group col-md-6">
+      <input name="city" type="text" class="form-control" id="city" placeholder="City"  required>
+      <div id="cityError" class="error-message">Field is required</div>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <select name="province" id="province" class="form-control" required >
+        <option value="" selected>Province</option>
+        <option>Punjab</option>
+        <option>Sindh</option>
+        <option>Balochistan</option>
+        <option>KPK</option>
+        <option>Gilgit Baltistan</option>
+        
+      </select>
+      <div id="provinceError" class="error-message">Field is required</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="fatherName" type="text" class="form-control" id="fatherName" placeholder="Father Name"  required>
+      <div id="fatherNameError" class="error-message">Field is required</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="fatherCnic" type="text" class="form-control" id="fatherCnic" pattern="[0-9]{13}" maxlength="13" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Father CNIC Without Dashes"  required>
+      <div id="fatherCnicError" class="error-message">Field is required</div>
+      <div id="fatherCnicError1" class="error-message">Please Enter Valid CNIC of 13 Digits Without Dashes.</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="fatherOccupation" type="text" class="form-control" id="fatherOccupation" placeholder="Father Occupation"  required>
+      <div id="fatherOccupationError" class="error-message">Field is required</div>
+    </div>
+    <div class="form-group col-md-6">
+      
+      <input name="fatherIncome" type="number" class="form-control" id="fatherIncome" placeholder="Father Income"  required>
+      <div id="fatherIncomeError" class="error-message">Field is required</div>
+    </div>
+  </div>
+  
+
+  <div class="PersonalDetails">EDUCATIONAL DETAILS</div>
+  <br>
+<div class="matric">
+  <h5 class="fieldTitle">MATRIC/O-LEVEL</h5>
+  <br>
+  <div class="form-row row">
+  <div class="form-group col-md-6">
+    <input name="matricObtainedMarks1" type="number" class="form-control" id="matricObtainedMarks" placeholder="Obtained Marks"  required>
+    <div id="matricObtainedMarksError" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="matricTotalMarks" type="number" class="form-control" id="matricTotalMarks" placeholder="Total Marks"  required>
+    <div id="matricTotalMarksError" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="matricSubject1" type="text" class="form-control" id="matricSubject1" placeholder="Name of Subject 1"  required>
+    <div id="matricSubject1Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="matricSubject2" type="text" class="form-control" id="matricSubject2" placeholder="Name of Subject 2" required >
+    <div id="matricSubject2Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="matricSubject3" type="text" class="form-control" id="matricSubject3" placeholder="Name of Subject 3" required >
+    <div id="matricSubject3Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="matricSubject4" type="text" class="form-control" id="matricSubject4" placeholder="Name of Subject 4"  required>
+    <div id="matricSubject4Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group row">
+    <label for="exampleFormControlFile1">Upload Documents</label>
+    <input name="matricDocuments" type="file" accept="image/png,image/jpg,image/jpeg" onchange="loadFile2(event)" class="form-control-file" id="matricDocuments" required>
+    <div id="matricDocumentsError" class="error-message">Field is required</div>
+    <p><img width="100px" id="output2"/></p>
+  </div>
+
+</div>
+<br>
+<div class="matric">
+  <h5 class="fieldTitle">INTERMEDIATE/A-LEVEL</h5>
+  <br>
+  
+  <div class="form-row row">
+    <div class="form-group col-md-12">
+      <label for="inputState">Field</label>
+      <select name="studyFields" id="studyFields" class="form-control"  required>
+        <option value="" selected>Choose...</option>
+        <option>FSc-Pre Medical</option>
+        <option>FSc-Pre Engineering</option>
+        <option>ICS</option>
+        <option>I-COM</option>
+        
+      </select>
+      <div id="studyFieldsError" class="error-message">Field is required</div>
+    </div>
+    
+  <div class="form-group col-md-6">
+    <input name="fscObtainedMarks" type="number" class="form-control" id="fscObtainedMarks" placeholder="Obtained Marks" required >
+    <div id="fscObtainedMarksError" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="fscTotalMarks" type="number" class="form-control" id="fscTotalMarks" placeholder="Total Marks"  required>
+    <div id="fscTotalMarksError" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="fscSubject1" type="text" class="form-control" id="fscSubject1" placeholder="Name of Subject 1"  required>
+    <div id="fscSubject1Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="fscSubject2" type="text" class="form-control" id="fscSubject2" placeholder="Name of Subject 2"  required>
+    <div id="fscSubject2Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="fscSubject3" type="text" class="form-control" id="fscSubject3" placeholder="Name of Subject 3" required >
+    <div id="fscSubject3Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group col-md-6">
+    <input name="fscSubject4" type="text" class="form-control" id="fscSubject4" placeholder="Name of Subject 4"  required>
+    <div id="fscSubject4Error" class="error-message">Field is required</div>
+  </div>
+  <div class="form-group row">
+    <label for="exampleFormControlFile1">Upload Documents</label>
+    <input name="fscDocuments" type="file" accept="image/png,image/jpg,image/jpeg" onchange="loadFile3(event)" class="form-control-file" id="fscDocuments"  required>
+    <div id="fscDocumentsError" class="error-message">Field is required</div>
+    <p><img width="100px" id="output3"/></p>
+  </div>
+  
+</div>
+ <br>
+<div class="matric ">
+  <h5 class="fieldTitle">Field of Study</h5>
+  <div class="form-row row">
+  <div class="form-group col-md-6">
+    <select name="chooseField" id="chooseField" class="form-control" required >
+      <option value="" selected>Applying For</option>
+      <option>BS COMPUTER SCIENCE</option>
+      <option>BS SOFTWARE ENGINEERING</option>
+      <option>BS MATHEMATICS</option>
+      <option>BBA</option>
+      <option>BS MLT</option>
+      
+    </select>
+    <div id="chooseFieldError" class="error-message">Field is required</div>
+  </div>
+</div>
+</div>
+
+</div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input radio-btn" type="checkbox" id="terms"  required>
+      <label class="form-check-label" for="gridCheck">
+        I certify that all information is correct and agreed to the terms and conditions.
+      </label>
+      <div id="termsError" class="error-message">Field is required</div>
+    </div>
+  </div>
+  <div class="submitBtn text-center" >
+  <button type="submit" value="submit" onclick="errorMsg();checkBox();genderFunc();emailInput();cnicInput();fatherCnicInput();mobileInput();validateMarks();" name="save" class="btn saveBtn">Submit</button></div>
+  
+</form> 
+</div>
+
+</div>
+
+
+
+<!--FOOTER-->
+<div class="container-fluid footer">
+  <footer class="row row-cols-5 py-5 my-4 border-top">
+    <div class="col logo-col">
+      <img class="footer-logo" src="sabaclogo.png" alt="">
+      <div class="intro1"><p class="intro">SABAC - Arid Institute of Management Sciences was established in 2014 under The Education Society Lahore, Govt. Act 1884 and affiliated with world most prestigious PMAS. Arid Agriculture University Rawalpindi Pakistan.
+          We are committed to prepare our students to work, acquire skills and enhance their capabilities that equip them adequately to live in rapidly changing global environment.</p></div>
+    </div>
+
+    <div class="col"></div>
+
+    <div class="col links-col">
+      <h5 class="footer-pages">Quick Links</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Admissions</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Campus life</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Apply Online</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">Contact Us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-link">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="col contact-col">
+      <h5 class="footer-pages">Contact Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-3 icon-text"><i class="bi bi-geo-alt-fill icon-color"><span class="contact-info">5/72 Usman Block New Garden Town
+          Opp Punjab University Hostel Gate # 4
+          Lahore, Pakistan.</span></i></li>
+        <li class="nav-item mb-3 icon-text"><i class="bi bi-telephone-fill icon-color"><span class="contact-info">+92-42-35940177 & +92-42-35887762-63</span></i></li>
+        <li class="nav-item mb-3 icon-text"><i class="bi bi-envelope-fill icon-color"><span class="contact-info"> info@aridlahore.edu.pk</span></i></li>
+      </ul>
+    </div>
+
+    <div class="col recognized-col">
+      <h5 class="footer-pages">Accreditation</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-3"><img width="100px" height="100px"  src="mainaridlogo.png" alt=""></li>
+        <li class="nav-item mb-3"><img width="100px" height="100px"  src="HEC.png" alt=""></li>
+      </ul>
+    </div>
+    
+  </footer>
+  <div class="row copyright">
+      <hr class="hr">
+      <h4 class="copyright-text">&copy;2024 SABAC-AIMS.All Rights Reserved.</h4>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

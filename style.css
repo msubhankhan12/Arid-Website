@@ -1,0 +1,523 @@
+/* NAVBAR CSS */
+.navbar-collapse{
+    justify-content: right;
+}
+.nav-pages{
+    color: #003399 !important;
+    margin-right: 5px;
+}
+
+.active,.nav-pages:hover{
+    color: #74D0F8 !important;
+    border-bottom: 3px #74D0F8 solid !important;
+}
+.active-link{
+    color: #74D0F8 !important;
+    margin-right: 5px;
+}
+/* FOOTER CSS */
+.footer-pages{
+    color: #003399 !important;
+    margin-right: 5px;
+}
+.footer-link{
+    color: #74D0F8 !important;
+}
+.intro{
+    color: #003399 ;
+    
+    font-size: 13px;
+}
+.footer-logo{
+    width: 20vw;
+}
+.links-col{
+    max-width: 15%;
+}
+
+.contact-info{
+    margin-left: 7px;
+    color: #74D0F8;
+}
+.icon-color{
+    color: #003399;
+}
+footer{
+    justify-content: right;
+    
+}
+.hr{
+    color: black;
+    width: 100%;
+}
+.copyright{
+    justify-content: center;
+    
+}
+.copyright-text{
+    padding: 10px 0 15px 0;
+    font-size: 15px;
+    color: #003399;
+    text-align: center;
+}
+.intro1{
+    width: 36vw;
+}
+
+.PersonalDetails{
+    font-size: 25px;
+    text-align: center;
+    color: white
+}
+.applicationForm{
+  /*  background-image: url(bg6.jpg);
+    background-repeat: no-repeat; */
+    background-color: black;
+    padding: 2vw 4vw 2vw 4vw;
+   
+}
+input,.form-control{
+    border: none !important;
+    border-bottom: 2px solid white !important;
+    background-color: transparent !important;
+    color: white !important;
+    border-radius: 0;
+    
+}
+
+
+.radio-btn{
+    border: 2px solid white !important;
+}
+.form-control-file{
+    border: none !important;
+}
+label{
+    color: white;
+}
+.fieldTitle{
+    color: white;
+}
+.form-check{
+    color: white;
+}
+::placeholder{
+    color: white !important;
+}
+option{
+    color: black !important;
+}
+.saveBtn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 30px 5px 30px;
+   
+}
+.saveBtn:hover{
+    color: white;
+    border-color: white;
+}
+.vision-img{
+    filter: brightness(0.6);
+    height: 80vh;
+}
+.vision-text{
+    font-size: 15px;
+    color: #ffffffc2;
+    display: flex;
+    justify-content: center;
+}
+.vision-heading{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.values-cards{
+    display: flex;
+    column-gap: 5%;
+}
+.values-card{
+    width: 100%;
+}
+.bi-facebook{
+    color: #003399;
+    font-size: 60px;
+}
+.bi-linkedin{
+    color: #003399;
+    font-size: 60px;
+}
+.bi-instagram{
+    font-size: 60px;
+        background: radial-gradient(circle at 30% 107% , #fdf497 0% , #fdf497 5% , #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        color: white;
+        width: 70px;
+        height: 71px;
+        border-radius: 10px;
+        justify-content: center;
+        display: inline-flex;
+        padding-top: 6px;
+        margin-top: 11px;
+}
+.social-text{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.social-icons{
+    justify-content: center;
+    display: flex;
+    column-gap: 2%;
+}
+.affiliation{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.affiliation-sec{
+    background-image: url(affiliation1.jpg);
+    padding: 4% 0 4% 0;
+}
+.map{
+    text-align: center;
+}
+.contact-subsec{
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+
+}
+.contact-sec{
+    text-align: center;
+    background-color: #69c9f34f;
+    padding: 3% 0 2% 0;
+    font-size: 20px;
+}
+.contact-img{
+    width: 50%;
+}
+.time-img{
+    width: 72%;
+}
+.timings{
+    list-style: none;
+    padding-top: 3%;
+    text-align: left;
+}
+.uni-info{
+    text-align: left;
+}
+.contact-number{
+    width: 50%;
+}
+.email-text{
+    padding-top: 10%;
+}
+.slider-img{
+    height: 80vh;
+    object-fit: cover;
+}
+.top-stories{
+    text-align: center;
+
+}
+.stories-card{
+    width: 18rem;
+}
+.top-stories-sec{
+    display: flex;
+    column-gap: 2%;
+    justify-content: center;
+}
+.google-map{
+    max-width: 100%;
+}
+.director-message{
+    text-align: center;
+    background-color: #69c9f34f;
+    padding: 3% 0 3% 0;
+}
+.director-sec{
+    display: flex;
+    column-gap: 6%;
+}
+.director-img{
+    width: 200px;
+    
+}
+
+.director-text{
+    font-size: 20px;
+    text-align: left;
+    align-self: center;
+    
+}
+.quote{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*CAMPUS LIFE */
+.background{
+    max-width: 100%;
+    border-radius: 2px;
+    position: relative;
+    filter: brightness(0.5);
+    z-index: -1;
+    
+}
+.bg-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.7s;
+}
+.bg-image-link{
+    color: white;
+}
+.bg-image-text{
+    position: absolute;
+    
+    color: white;
+}
+.bg-labs{
+    left: 30%;
+}
+.bg-convocation{
+    left: 25%;
+}
+.bg-library{
+    left: 25%;
+}
+.bg-playarea{
+    left: 30%;
+}
+.bg-image-sec{
+    display: flex;
+    column-gap: 2%;
+}
+.convocation{
+    font-size: 20px;
+    
+}
+.bg-image-link,.bg-image-link:hover{
+    color: white;
+    text-decoration: none;
+}
+.bg-image:hover{
+    transform: translate(0px,10px);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+.close {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 1;
+    
+  }
+  .indicators-btn{
+    margin: 10% 0 10% 0;
+  }
+  
+  .lab-images img {
+    
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .lab-images img:hover {
+    opacity: 1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .go-back{
+    text-align: center;
+  }
+  .go-back-btn{
+    background-color: black;
+    color: white;
+    padding: 5px 30px 5px 30px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+  }
+
+  .events-text{
+    text-align: center;
+    background-color: #69c9f34f;
+    padding: 10px 0 13px 0;
+  }
+
+  /*ADMISSIONS*/
+  .fee-structure{
+    list-style-type: square;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: uppercase;
+  }
+  .accordion-body{
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .accordion-button{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .error-message {
+    color: red;
+    font-style: italic;
+    display: none;
+  }
+input:invalid{
+    background-color: #d6249f;
+}
+
+  /* APPLY ONLINE */
+  .rules-text{
+    text-align: center;
+  }
+  .rules-list{
+    color: #003399;
+    text-transform: uppercase;
+  }
+
+
+
+/*RESPONSIVENESS*/
+
+@media all and (max-width:1024px){
+    .footer-logo{
+        width: 35vw;
+    }
+    .stories-card{
+        width: 15rem;
+    }
+    .top-stories-sec{
+        column-gap: 1%;
+    }
+  }
+@media all and (max-width: 768px) { 
+    .navbar-nav{
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo-col{
+        max-width: 100%;
+    }
+    .contact-col{
+        max-width: 100%;
+    }
+    .intro1{
+        width: 100%;
+    }
+    
+    .logo-col,.contact-col{
+        width: 55%;
+    }
+    .labs-text,.library-text,.playarea-text{
+        font-size: 25px;
+    }
+    .convocation{
+        font-size: 15px;
+    }
+    .events-text{
+        font-size: 25px;
+    }
+    .stories-card{
+        width: 18rem;
+    }
+    .top-stories-sec{
+        row-gap: 2em;
+        column-gap: 4%;
+    }
+    .links-col{
+        max-width: 100%;
+    }
+    
+ }
+  @media all and (max-width:426px){
+    .footer-logo{
+        width: 75vw;
+    }
+    .links-col{
+        max-width: 100%;
+    }
+    .recognized-col{
+        max-width: 100%;
+    }
+    .copyright-text{
+        font-size: 15px;
+    }
+    .contact-subsec{
+        flex-direction: column;
+    }
+    .contact-number{
+        width: 100%;
+    }
+    .logo-col,.links-col,.recognized-col{
+        width: 100%;
+    }
+    .values-cards{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .bg-image-sec{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .labs-text,.library-text,.playarea-text,.convocation{
+        font-size: 30px;
+    }
+    .director-sec{
+        flex-direction: column;
+    }
+    .director-img{
+        width: 400px;
+        margin-top: 2rem;
+    }
+  }
+  @media all and (max-width:376px){
+    .nav-logo1{
+        width: 19vw;
+        height: 17vw;
+    }
+    .nav-logo2{
+        width: 45vw;
+        height: 24vw 
+    }
+    .director-img{
+        width: 350px;
+    }
+    
+  }
+  @media all and (max-width:321px){
+    .copyright-text{
+        font-size: 13px;
+    }
+    .convocation{
+        font-size: 25px;
+    }
+    .contact-col-admission{
+        width: 100%;
+    }
+    .director-img{
+        width: 290px;
+    }
+    
+  }
+
+
+
+
+  /*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+ 
